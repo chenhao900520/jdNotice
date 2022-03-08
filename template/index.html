@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <meta content="yes"name="apple-mobile-web-app-capable"/>
+    <meta content="black"name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <title>推送通知绑定</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .query{font-size:20px}
+    .result{font-size:20px;margin:0 auto;line-height: 10px;}
+</style>
+<form method="post" action="/" class="form-horizontal">
+    <div class="form-group">
+        <label for="ck" class="col-sm-2 control-label">CK</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="ck" name="ck" value="{{ck}}" placeholder="请输入您的ck，如果没有请联系客服">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="uid" class="col-sm-2 control-label">请输入UID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="uid" name="uid" value="{{uid}}" placeholder="请输入您的uid，如果没有请咨询客服">
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary btn-lg btn-block">确认提交</button>
+</form>
+
+</html>
